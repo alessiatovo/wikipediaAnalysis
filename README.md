@@ -7,7 +7,9 @@ The project is built on top of **Apache Spark** and is executed with the comand 
 The data processed by the App class are stored into HDFS and consequently the graphs generated and anlyzed are located on Neo4j local database. **Hadoop 2.8.3** sould be properly configured and also the **Neo4j community edition**.
 
 The dataset has to be load on your local file system and the path has to be put on the *main.sh* file in replace of```<input-path>```. In your file system, there should be a directory that will contain the output. This path must end with the ```/``` symbol. The path must be replaced instead of ```<output-path>```.
-To execute the code on your computer, esecute the script *main.sh*. This script executes the pre-processing and generate the graph. To visualize the graphs open the url ``` http://localhost:7474``` on your browser and on the bar write the queries.
+In the *main.sh* replace <hadoop-bin-hdfs> path with your own path of the ```hadoop-2.8.3/bin/hdfs``` directory.
+
+To execute the code on your computer, esecute the script *main.sh* after editing correctly the properly fields. This script executes the pre-processing and generate the graph. To visualize the graphs open the url ``` http://localhost:7474``` on your browser and on the bar write the queries.
 
 
 
